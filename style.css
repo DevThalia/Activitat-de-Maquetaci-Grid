@@ -1,0 +1,234 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: #F6D1D1;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0 15px;
+    font-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2D3A3C; 
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #A2DFF7;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.seccion-galeria h1 {
+    font-size: 2.5rem;
+    color: #2D3A3C; 
+    background-color: #F6D1D1;
+    border-radius: 5px;
+    text-align: center;
+    margin:0px;
+    padding: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #F7E9B4; 
+    border-radius: 10px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #F6B0C2; 
+    border-radius: 10px;
+    margin: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #E8F8F5; 
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bienvenida h1 {
+    font-size: 2.5rem;
+    color: #2D3A3C; 
+    margin-bottom: 20px;
+}
+
+.bienvenida h3 {
+    font-size: 1.5rem;
+    color: #F29E9E; 
+    margin-bottom: 20px;
+}
+
+.bienvenida button {
+    padding: 10px 20px;
+    background-color: #A2DFF7; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bienvenida button:hover {
+    background-color: #7AC2D9; 
+}
+
+.testimonio {
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+    background-color: #F0D1FF; 
+}
+
+.carrusel {
+    display: flex;
+    animation: scrollTestimonios 30s infinite linear;
+}
+
+.persona {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.persona .foto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #A2DFF7; 
+    margin-bottom: 15px;
+}
+
+.persona .texto h3 {
+    font-size: 1.5rem;
+    color: #2D3A3C; 
+    margin-bottom: 10px;
+}
+
+.persona .texto p {
+    font-size: 1rem;
+    color: #7F7F7F; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #F6D1D1; 
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p {
+    color: #2D3A3C; 
+    margin: 10px 0;
+}
+
+footer .redes {
+    margin-top: 10px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes scrollTestimonios {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.persona .texto p {
+    font-size: 1rem;
+    color: #7F7F7F; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .galeria img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .bienvenida h1 {
+        font-size: 2rem;
+    }
+
+    .bienvenida h3 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
